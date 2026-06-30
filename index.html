@@ -2,152 +2,428 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="C#, ASP.NET Core, Clean Architecture, React, Fullstack .NET Developer">
+  <meta name="description" content="Hanan Ahmed — Fullstack .NET Developer. C#, ASP.NET Core, React, PostgreSQL, Azure, Clean Architecture.">
+  <title>Hanan Ahmed — Fullstack .NET Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <Meta name="keywords" content="C#, ASP.NET, Clean Architectur">
-  <meta name="description" content=".Net Developer, C#, ASP.NET, Clean Architectur  ">
-  <title>Hanan Ahmed — About Me</title>
-  <meta name="description" content="About me page — Full-Stack .NET developer. C#, ASP.NET Core, React, SQL, Open Source enthusiast.">
 </head>
 <body>
-  <!-- Header / Nav -->
-  <header>
-    <h1>Hanan Ahmed</h1>
-    <p><strong>Full-Stack .NET Developer</strong> — C#, ASP.NET Core, React, SQL</p>
 
-    <!-- Simple in-page navigation (works without CSS/JS) -->
-    <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <!-- Replace with: <img class="avatar" src="images/hanan.png" alt="Hanan Ahmed"> -->
+        <div class="avatar-placeholder">H</div>
+        <div class="header-text">
+          <h1>Hanan <span>Ahmed</span></h1>
+          <div class="role"> Junior Fullstack .NET Developer — C#, ASP.NET Core, React, PostgreSQL</div>
+          <div class="location">  Sweden</div>
+        </div>
+        <button class="theme-toggle" type="button" aria-label="Switch to day mode" aria-pressed="false">
+          <span class="theme-icon" aria-hidden="true">☀</span>
+          <span class="theme-label">Day</span>
+        </button>
+      </div>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#strengths">Strengths</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <hr>
-
-  <!-- Hero / About -->
   <main>
-    <section id="about" aria-labelledby="about-heading">
-      <h2 id="about-heading">About</h2>
-      <p>
-        I am a motivated Computer Science student and Full-Stack .NET developer interested in building
-        reliable and scalable backend systems. I enjoy working with C#, ASP.NET Core, Entity Framework,
-        and exposing RESTful APIs. On the frontend I use React for interactive user interfaces.
-      </p>
-      <p>
-        I like contributing to open-source projects, learning new technologies quickly, and working in
-        collaborative teams to solve real problems.
-      </p>
+    <div class="container">
 
-      <!-- optional avatar (replace src with your image path) -->
-      <figure>
-        <img src="imegs/Hanan.png" alt="Photo of Your Name" width="150" height="150">
-        <figcaption>Hanan Ahmed — Full-Stack .NET</figcaption>
-      </figure>
-    </section>
+      <!-- About -->
+      <section id="about">
+        <h2>About</h2>
+        <div class="about-text">
+          <p>Driven and results-oriented .NET Fullstack Developer with a solid grounding in software engineering principles and clean architecture. Skilled in delivering production-grade applications across the full stack — from database design and secure .NET Web APIs to responsive React interfaces and cloud deployment. Committed to writing clean, maintainable code with a strong emphasis on security, validation, and collaborative delivery through GitHub flow, Scrum, and CI/CD practices.</p>
+          <p>Currently completing a backend-focused internship at VSA Innovation, working on WebDashboardSmartUrine — a healthcare alert management dashboard built with ASP.NET Core, CQRS/MediatR, FluentValidation, and PostgreSQL. Contributions include building new API endpoints with custom validation logic, resolving EF Core data persistence issues, and extending the data model — all while maintaining a strict non-breaking approach to avoid disrupting existing functionality relied on by the rest of the team.</p>
+        </div>
+      </section>
 
-    <hr>
+      <!-- Key Strengths -->
+      <section id="strengths">
+        <h2>Key Strengths</h2>
+        <div class="strengths-grid">
+          <div class="strength-item">
+            <strong>Clean Architecture & API Design</strong>
+            <span>CQRS, MediatR, JWT, FluentValidation — production patterns across every project</span>
+          </div>
+          <div class="strength-item">
+            <strong>Non-Breaking Development</strong>
+            <span>Extends features without touching existing code, keeping the team's work stable</span>
+          </div>
+          <div class="strength-item">
+            <strong>Root Cause Problem Solving</strong>
+            <span>Digs into actual causes of bugs, not just symptoms</span>
+          </div>
+          <div class="strength-item">
+            <strong>Team Collaboration & Leadership</strong>
+            <span>Scrum leader, sprint planning, coordinating across frontend and backend teams</span>
+          </div>
+          <div class="strength-item">
+            <strong>Documentation & Communication</strong>
+            <span>Dev logs, clear commit messages, team-facing documentation</span>
+          </div>
+          <div class="strength-item">
+            <strong>Continuous Learning</strong>
+            <span>Learns by building real, production-style applications from healthcare to AI</span>
+          </div>
+        </div>
+      </section>
 
-    <!-- Skills -->
-    <section id="skills" aria-labelledby="skills-heading">
-      <h2 id="skills-heading">Skills</h2>
+      <!-- Skills -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-group">
+          <div class="skills-label">Backend</div>
+          <div class="tags">
+            <span class="tag">.NET Core</span>
+            <span class="tag">ASP.NET</span>
+            <span class="tag">Minimal API</span>
+            <span class="tag">Clean Architecture</span>
+            <span class="tag">CQRS</span>
+            <span class="tag">MediatR</span>
+            <span class="tag">EF Core</span>
+            <span class="tag">LINQ</span>
+            <span class="tag">SQL</span>
+            <span class="tag">JWT</span>
+            <span class="tag">Identity</span>
+            <span class="tag">RBAC</span>
+            <span class="tag">FluentValidation</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <div class="skills-label">Frontend</div>
+          <div class="tags">
+            <span class="tag green">React</span>
+            <span class="tag green">Tailwind CSS</span>
+            <span class="tag green">TanStack Query</span>
+            <span class="tag green">Redux</span>
+            <span class="tag green">Zustand</span>
+            <span class="tag green">React Hook Form</span>
+            <span class="tag green">Zod</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <div class="skills-label">DevOps & Cloud</div>
+          <div class="tags">
+            <span class="tag purple">CI/CD</span>
+            <span class="tag purple">GitHub Actions</span>
+            <span class="tag purple">Azure</span>
+            <span class="tag purple">Vercel</span>
+            <span class="tag purple">Netlify</span>
+            <span class="tag purple">Docker</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <div class="skills-label">AI & Modern Tooling</div>
+          <div class="tags">
+            <span class="tag orange">OpenAI API</span>
+            <span class="tag orange">Claude</span>
+            <span class="tag orange">Gemini</span>
+            <span class="tag orange">Google AI Studio</span>
+            <span class="tag orange">Supabase</span>
+            <span class="tag orange">Prisma</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <div class="skills-label">Project & Team</div>
+          <div class="tags">
+            <span class="tag">GitHub Projects</span>
+            <span class="tag">Agile / Scrum</span>
+            <span class="tag">Kanban</span>
+            <span class="tag">Sprint Planning</span>
+            <span class="tag">Scrum Leader</span>
+            <span class="tag">Code Review</span>
+          </div>
+        </div>
+      </section>
 
-      <h3>Backend</h3>
-      <ul>
-        <li>C#, ASP.NET Core (Web API)</li>
-        <li>Entity Framework Core, SQL Server</li>
-        <li>Designing REST APIs, JWT authentication</li>
-        <li>Async/Await, Dependency Injection, SOLID principles</li>
-      </ul>
+      <!-- Work Experience -->
+      <section id="experience">
+        <h2>Work Experience</h2>
 
-      <h3>Frontend</h3>
-      <ul>
-        <li>React (Hooks, state management)</li>
-        <li>Axios / Fetch for API calls</li>
-      </ul>
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">Backend Developer — LIA Internship</div>
+            <div class="card-meta">2026 — Ongoing</div>
+          </div>
+          <div class="card-company">VSA Innovation · Göteborg, Sweden</div>
+          <ul>
+            <li>Built backend features for WebDashboardSmartUrine, a healthcare alert dashboard using ASP.NET Core, CQRS/MediatR, and PostgreSQL</li>
+            <li>Implemented a PATCH /api/Alerts/{alertId}/snooze-flexible endpoint with custom FluentValidation and a JSON converter for empty-string dates</li>
+            <li>Resolved EF Core issues including DbUpdateConcurrencyException and a ReviewedByStaffUserId persistence bug fixed via JWT claims extraction</li>
+            <li>Extended the Alert entity (IsSnoozed, IsReviewed, AlertStatus) without breaking existing isActive consumers</li>
+            <li>Collaborated with Rahul on API security and Bhuvana on frontend coordination, maintaining a strict non-breaking development approach</li>
+          </ul>
+          <div class="card-tech">
+            <span class="tag">ASP.NET Core</span>
+            <span class="tag">C#</span>
+            <span class="tag">CQRS</span>
+            <span class="tag">MediatR</span>
+            <span class="tag">EF Core</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">FluentValidation</span>
+            <span class="tag">JWT</span>
+          </div>
+        </div>
 
-      <h3>DevOps & Tools</h3>
-      <ul>
-        <li>Git & GitHub</li>
-        <li>Linux basics, Bash scripting, Python scripting</li>
-        <li>Docker (experience), CI/CD concepts</li>
-      </ul>
-    </section>
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">Fullstack Developer — AI Bootcamp</div>
+            <div class="card-meta">2026</div>
+          </div>
+          <div class="card-company">InFiNet Code AB · Sweden</div>
+          <ul>
+            <li>Built FamilyBudget AI, a full-stack personal finance app for managing subscriptions, tracking recurring expenses, and AI-powered financial insights</li>
+            <li>Deployed to Azure App Service with Azure SQL and a CI/CD pipeline via GitHub Actions</li>
+            <li>Integrated OpenAI API for an in-app AI conversation assistant</li>
+            <li>Resolved real-world production issues: deployment configuration, CORS, authentication, and cloud debugging</li>
+          </ul>
+          <div class="card-tech">
+            <span class="tag">ASP.NET Core 9</span>
+            <span class="tag green">React</span>
+            <span class="tag purple">Azure</span>
+            <span class="tag purple">GitHub Actions</span>
+            <span class="tag orange">OpenAI API</span>
+            <span class="tag">JWT</span>
+          </div>
+        </div>
 
-    <hr>
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">Fullstack Developer — Summer Hackathon</div>
+            <div class="card-meta">2025</div>
+          </div>
+          <div class="card-company">InFiNet Code AB · Sweden</div>
+          <ul>
+            <li>Built a web solution using .NET and C# over a two-month hackathon period</li>
+            <li>Worked across both frontend and backend, contributing to full-stack feature development</li>
+            <li>Focused on structured, maintainable code and quality assurance as part of a collaborative team</li>
+          </ul>
+          <div class="card-tech">
+            <span class="tag">.NET</span>
+            <span class="tag">C#</span>
+            <span class="tag green">React</span>
+          </div>
+        </div>
 
-    <!-- Projects -->
-    <section id="projects" aria-labelledby="projects-heading">
-      <h2 id="projects-heading">Selected Projects</h2>
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">Teaching Assistant / Student Assistant</div>
+            <div class="card-meta">2018 — 2019</div>
+          </div>
+          <div class="card-company">British Council · Saudi Arabia</div>
+          <ul>
+            <li>Supported classroom teachers with lesson planning and delivery</li>
+            <li>Worked with children in group settings, adapting to varied learning needs</li>
+            <li>Maintained a safe, structured, and engaging learning environment</li>
+          </ul>
+        </div>
+      </section>
 
-      <article>
-        <h3>Task Manager (Full-Stack)</h3>
-        <p>
-          Built a CRUD REST API with ASP.NET Core and EF Core, implemented JWT authentication,
-          and a React frontend that consumes the API. Dockerized the backend for local testing.
-        </p>
-        <p>
-          <strong>Repo / Demo:</strong> <a href="https://github.com/yourusername/task-manager">github.com/yourusername/task-manager</a>
-        </p>
-      </article>
+      <!-- Projects -->
+      <section id="projects">
+        <h2>Projects</h2>
 
-      <article>
-        <h3>Student Booking System</h3>
-        <p>
-          Designed relational schema and implemented endpoints for bookings and user management.
-          Focus on correctness and clear API contracts.
-        </p>
-      </article>
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">Tire Service Platform</div>
+            <div class="card-meta">Team Project · Live Deployment</div>
+          </div>
+          <ul>
+            <li>Fullstack platform connecting vehicle owners with tire workshops for booking, storage, and inspection management</li>
+            <li>Role-based access control across four roles with branch-scoped data isolation and audit logging</li>
+            <li>CI/CD with GitHub Actions deploying to Azure App Service and Azure Static Web Apps</li>
+            <li>111+ unit tests covering authorization, branch boundaries, and edge cases</li>
+          </ul>
+          <div class="card-tech">
+            <span class="tag">.NET Web API</span>
+            <span class="tag">CQRS</span>
+            <span class="tag">MediatR</span>
+            <span class="tag">EF Core</span>
+            <span class="tag green">React</span>
+            <span class="tag purple">Azure</span>
+            <span class="tag purple">GitHub Actions</span>
+          </div>
+          <a class="card-link" href="https://github.com/ITHanan/TiresHub" target="_blank">↗ github.com/ITHanan/TiresHub</a>
+        </div>
 
-      <article>
-        <h3>Automation Scripts</h3>
-        <p>
-          Small Python and Bash scripts for automating development tasks and data processing.
-        </p>
-      </article>
-    </section>
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">FamilyBudget AI — Backend</div>
+            <div class="card-meta">ASP.NET Core 9 · OpenAI</div>
+          </div>
+          <ul>
+            <li>AI-powered personal finance app with subscription tracking, transaction categorization, and an AI chat assistant</li>
+            <li>Clean Architecture (Domain, Application, Infrastructure, Api) with OpenAI + Ollama provider switching</li>
+            <li>Hangfire background jobs, health checks, and structured error handling with problem+json</li>
+          </ul>
+          <div class="card-tech">
+            <span class="tag">ASP.NET Core 9</span>
+            <span class="tag">Clean Architecture</span>
+            <span class="tag">EF Core</span>
+            <span class="tag orange">OpenAI API</span>
+            <span class="tag purple">Azure SQL</span>
+          </div>
+          <a class="card-link" href="https://github.com/ITHanan/FamilyBudget-AIBackend" target="_blank">↗ github.com/ITHanan/FamilyBudget-AIBackend</a>
+        </div>
 
-    <hr>
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">Case Management System</div>
+            <div class="card-meta">Fullstack · Clean Architecture</div>
+          </div>
+          <ul>
+            <li>Full-stack case management platform for managing clients, cases, notes, and team assignments</li>
+            <li>Dashboard analytics with Bar and Pie charts, search, filtering, and pagination</li>
+            <li>JWT authentication and a responsive Material UI dark theme</li>
+          </ul>
+          <div class="card-tech">
+            <span class="tag">ASP.NET Core 8</span>
+            <span class="tag">CQRS</span>
+            <span class="tag">SQL Server</span>
+            <span class="tag green">React</span>
+            <span class="tag green">Material UI</span>
+          </div>
+          <a class="card-link" href="https://github.com/ITHanan/CaseManegmentSystemCleanArchticture" target="_blank">↗ github.com/ITHanan/CaseManegmentSystemCleanArchticture</a>
+        </div>
 
-    <!-- Experience / Education -->
-    <section id="experience" aria-labelledby="experience-heading">
-      <h2 id="experience-heading">Experience & Education</h2>
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">E-Commerce Store</div>
+            <div class="card-meta">Console App · C#</div>
+          </div>
+          <ul>
+            <li>Console-based shopping system with authentication, cart logic, checkout, and JSON-persisted order history</li>
+            <li>Styled terminal UI using Spectre.Console and Figgle ASCII art banners</li>
+          </ul>
+          <div class="card-tech">
+            <span class="tag">C#</span>
+            <span class="tag">.NET</span>
+            <span class="tag">LINQ</span>
+            <span class="tag">JSON</span>
+            <span class="tag">Spectre.Console</span>
+          </div>
+          <a class="card-link" href="https://github.com/ITHanan/E-commerceStore01" target="_blank">↗ github.com/ITHanan/E-commerceStore01</a>
+        </div>
+      </section>
 
-      <h3>Internships / Practical Experience</h3>
-      <ul>
-        <li>Backend development projects at university / personal open-source contributions</li>
-      </ul>
+      <!-- Education -->
+      <section id="education">
+        <h2>Education</h2>
+        <div class="edu-item">
+          <div class="edu-degree">Master Fullstack .NET Developer</div>
+          <div class="edu-school">NBI / Handelsakademin · Göteborg, Sweden</div>
+          <div class="edu-year">Graduated June 2026</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-degree">B.Sc. Computer Science</div>
+          <div class="edu-school">Open University</div>
+          <div class="edu-year">Graduated 2018</div>
+        </div>
+      </section>
 
-      <h3>Education</h3>
-      <p>
-        Master Full-Stack .NET — NBI/HandelsAcademin, expected graduation: 2026 
-      </p>
-      <p>     
-           B.Sc. in Computer Science — Open University, graduated: 2018
-      </p>
-    </section>
+      <!-- GitHub Achievements -->
+      <section id="achievements">
+        <h2>GitHub Achievements</h2>
+        <div class="achievements-list">
+          <div class="achievement-item">
+            <div class="achievement-badge"></div>
+            <div class="achievement-text">
+              <strong>Pull Shark ×2</strong>
+              <span>Active contributor with multiple merged pull requests across team projects</span>
+            </div>
+          </div>
+          <div class="achievement-item">
+            <div class="achievement-badge">⚡</div>
+            <div class="achievement-text">
+              <strong>Quickdraw</strong>
+              <span>Recognized for fast and effective pull request response and collaboration</span>
+            </div>
+          </div>
+          <div class="achievement-item">
+            <div class="achievement-badge"></div>
+            <div class="achievement-text">
+              <strong>YOLO</strong>
+              <span>Merged a pull request without a code review — demonstrating decisiveness in fast-paced delivery</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <hr>
+      <!-- Contact -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <div class="label">Email</div>
+            <a href="mailto:ithanan@gmail.com">ithanan@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <div class="label">Phone</div>
+            <span>+46 700 501 035</span>
+          </div>
+          <div class="contact-item">
+            <div class="label">GitHub</div>
+            <a href="https://github.com/ITHanan" target="_blank">github.com/ITHanan</a>
+          </div>
+          <div class="contact-item">
+            <div class="label">LinkedIn</div>
+            <a href="https://linkedin.com/in/hanan-ahmed-546208272" target="_blank">linkedin.com/in/hanan-ahmed</a>
+          </div>
+        </div>
+      </section>
 
-    <!-- Contact -->
-    <section id="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Contact</h2>
-      <p>Email: <a href="mailto:ithanan@gmail.com.com">ithanan@gmail.com</a></p>
-      <p>Phone: +46 (0) 0700501035</p>
-      <p>GitHub: <a href="https://github.com/ITHanan">github.com/ITHanan</a></p>
-      <p>LinkedIn: <a href="linkedin.com/in/hanan-ahmed-546208272">linkedin.com/in/HananProfile</a></p>
-    </section>
+    </div>
   </main>
-
-  <hr>
 
   <!-- Footer -->
   <footer>
-    <p>© <time datetime="2025">2025</time> Hanan Ahmed — Open to internships & junior backend roles</p>
+    <div class="container">
+      © 2026 Hanan Ahmed — Open to fullstack .NET developer roles in Göteborg
+    </div>
   </footer>
+
+  <script>
+    const themeToggle = document.querySelector('.theme-toggle');
+    const themeIcon = document.querySelector('.theme-icon');
+    const themeLabel = document.querySelector('.theme-label');
+    const savedTheme = localStorage.getItem('theme');
+    const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+    const initialTheme = savedTheme || (prefersLight ? 'light' : 'dark');
+
+    function applyTheme(theme) {
+      const isLight = theme === 'light';
+      document.documentElement.dataset.theme = theme;
+      themeToggle.setAttribute('aria-pressed', String(isLight));
+      themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to day mode');
+      themeIcon.textContent = isLight ? '☾' : '☀';
+      themeLabel.textContent = isLight ? 'Dark' : 'Day';
+    }
+
+    applyTheme(initialTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const nextTheme = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+      localStorage.setItem('theme', nextTheme);
+      applyTheme(nextTheme);
+    });
+  </script>
 </body>
 </html>
